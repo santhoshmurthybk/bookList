@@ -1,0 +1,25 @@
+> booklist@1.0.0 coverage C:\Users\SB064618\Workspace-Local\New folder
+> jest --coverage
+
+ PASS  ./resolvers.test.js
+  test the schema
+    √ books query (10ms)
+    √ books query with a bookID (4ms)
+    √ books query with a bookID and bookId not found (9ms)
+    √ add book mutation (3ms)
+    √ update book mutation (1ms)
+    √ update book mutation when book not found (1ms)
+    √ delete book mutation (1ms)
+    √ delete book mutation when book not found (2ms)
+
+--------------|---------|----------|---------|---------|-------------------
+File          | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+--------------|---------|----------|---------|---------|-------------------
+All files     |     100 |      100 |     100 |     100 |
+ resolvers.js |     100 |      100 |     100 |     100 |
+--------------|---------|----------|---------|---------|-------------------
+Test Suites: 1 passed, 1 total
+Tests:       8 passed, 8 total
+Snapshots:   0 total
+Time:        3.665s
+Ran all test suites.

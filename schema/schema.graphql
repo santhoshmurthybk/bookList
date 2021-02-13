@@ -1,0 +1,29 @@
+type Query{
+    books(bookId: String = null): [Book]
+}
+
+type Mutation{
+    addBook(book: BookInput!): Result
+    deleteBook(bookId: String!): Result
+    updateBook(book: BookInput!): Result
+}
+
+type Book {
+   bookId: String!
+   name: String!
+   releaseDate: Int!
+   authorName: String!
+}
+
+input BookInput {
+    bookId: String!
+    name: String!
+    releaseDate: Int!
+    authorName: String!
+}
+
+type Result {
+    status: Boolean!
+    message: String!
+}
+
